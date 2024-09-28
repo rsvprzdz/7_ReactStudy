@@ -8,7 +8,7 @@ import { useState } from 'react';
 function App() {
 
   const [list, setList] = useState(['샘플', '데이터']);
-  const [complete, setComplete] = useState([false]);
+  
 
   const addItem = (todoItem) => {   // IsertItem 컴포넌트에서 추가될 데이터를 매개변수로 받아
                                 // list 상태에 추가
@@ -31,7 +31,7 @@ function App() {
         {/* addItem키를 통해 {addItem}을 prop으로 IsertItem에 전달함 */}
         <InsertItem addItem={addItem}/>
         {/* TodoList 컴포넌트로 list 을 전달할거임 */}
-        <TodoList list={list} setComplete={setComplete} setList={setList}/>
+        <TodoList list={list} setList={setList}/>
 
       </MyContainer>
     </div>
