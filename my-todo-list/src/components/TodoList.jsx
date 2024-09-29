@@ -28,7 +28,7 @@ const DeleteButton = styled.button`
 `;
 
 
-// App에서 {list}{deleteItem}을 받아왔음
+// App에서 {list}{setList}을 받아왔음
 export default function TodoList({list , setList}){
     const [complete, setComplete] = useState(Array(list.length).fill(false));
 

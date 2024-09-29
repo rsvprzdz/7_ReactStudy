@@ -14,7 +14,7 @@ const Title = styled.h1`
     margin: 0;
     font-size: 50px;
 `
-// 예전에는 props를 매개변수로 전달하고 {props.children}으로 했지만 지금은 key값인 children만 전달해두댐
+// 예전에는 props를 매개변수로 전달하고 {props.children}으로 했지만 지금은 key값인 children만 전달해도됨
 function MyContainer({children, title}){
     return (
         <>

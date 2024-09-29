@@ -30,7 +30,7 @@ function App() {
       <MyContainer title="My TodoList"> 
         {/* addItem키를 통해 {addItem}을 prop으로 IsertItem에 전달함 */}
         <InsertItem addItem={addItem}/>
-        {/* TodoList 컴포넌트로 list 을 전달할거임 */}
+        {/* TodoList 컴포넌트로 list랑 setList 을 전달할거임 */}
         <TodoList list={list} setList={setList}/>
 
       </MyContainer>
