@@ -3,24 +3,40 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Menubar from './components/Menubar';
 import Timer from './components/Timer';
 import CountLetters from './components/CountLetters';
+import Home from './components/Home';
+import { createContext, useEffect, useState } from 'react';
+
+export const UserContext = createContext();
+let defaultUser = {
+  id: '',
+  pwd: ''
+}
 
 function App() {
+  // defaultUser를 초기값으로 줘서 [id:'', pwd:'']와 동일함
+  const [user, setUser] = useState(defaultUser);
+  const defaultContext = {
+    data: user,
+    setData: setUser
+  }
 
-  
+
+
+
   return (
     <BrowserRouter>
-      <header>
-      </header>
       <main>
           <Menubar/>
+
+        <UserContext.Provider value={defaultContext}>
           <Routes>
-            <Route path="/" element={<p style={{textAlign:'center'}}>메인 페이지</p>} />
+            <Route path="/" element={<p>{<Home/>}</p>} />
             <Route path="/timer" element={<p>{<Timer />}</p>} />
             <Route path="/countLetters" element={<p>{<CountLetters />}</p>} />
           </Routes>
+        </UserContext.Provider>
       </main>
     </BrowserRouter>
-
   );
 }
 
