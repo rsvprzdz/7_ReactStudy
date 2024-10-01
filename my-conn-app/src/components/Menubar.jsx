@@ -28,6 +28,7 @@ function Menubar(){
             <MyLink to="/">HOME</MyLink>
             <MyLink to="/pt1">연습</MyLink>
             <MyLink to="/pt2">연습2</MyLink>
+            <MyLink to="/chatbot">챗봇</MyLink>
         </Nav>
     )
 
