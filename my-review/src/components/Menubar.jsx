@@ -29,6 +29,7 @@ function Menubar(){
       <MyLink to="/timer">타이머 </MyLink>
       <MyLink to="/countLetters">글자 수 세기</MyLink>
       <MyLink to="/stopwatch">스톱 워치</MyLink>
+      <MyLink to="/waitlist">대기명단</MyLink>
     </Nav>
   )
 }

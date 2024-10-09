@@ -11,3 +11,5 @@
 ## 추가 모듈
 - react-router-dom (2024-10-02)
 - styled-components (2024-10-02)
+- react-slick (2024-10-02)
+- slick-carousel (2024-10-02)
